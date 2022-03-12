@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD08B825-E7E2-4855-858C-B85BACFB8DDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>magezine</RootNamespace>
+    <AssemblyName>magezine</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChekAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChekAdd.Designer.cs">
+      <DependentUpon>ChekAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContraktorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContraktorUpdate.Designer.cs">
+      <DependentUpon>ContraktorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper.Designer.cs">
+      <DependentUpon>Helper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logotipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logotipe.Designer.cs">
+      <DependentUpon>Logotipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrihodAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrihodAdd.Designer.cs">
+      <DependentUpon>PrihodAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PriseListAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriseListAdd.Designer.cs">
+      <DependentUpon>PriseListAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreAdd.Designer.cs">
+      <DependentUpon>StoreAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreUpdate.Designer.cs">
+      <DependentUpon>StoreUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="СontractorAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="СontractorAdd.Designer.cs">
+      <DependentUpon>СontractorAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db_conect.cs" />
+    <Compile Include="director.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="director.Designer.cs">
+      <DependentUpon>director.cs</DependentUpon>
+    </Compile>
+    <Compile Include="entrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>entrance.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Handbook_eden_izmeren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Handbook_eden_izmeren.Designer.cs">
+      <DependentUpon>Handbook_eden_izmeren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="handbook_kategoriy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="handbook_kategoriy.Designer.cs">
+      <DependentUpon>handbook_kategoriy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kassir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kassir.Designer.cs">
+      <DependentUpon>Kassir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kladovhik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kladovhik.Designer.cs">
+      <DependentUpon>Kladovhik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordUpdate.Designer.cs">
+      <DependentUpon>PasswordUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalAdd.Designer.cs">
+      <DependentUpon>PersonalAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalUpdate.Designer.cs">
+      <DependentUpon>PersonalUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChekAdd.resx">
+      <DependentUpon>ChekAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContraktorUpdate.resx">
+      <DependentUpon>ContraktorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper.resx">
+      <DependentUpon>Helper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logotipe.resx">
+      <DependentUpon>Logotipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrihodAdd.resx">
+      <DependentUpon>PrihodAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriseListAdd.resx">
+      <DependentUpon>PriseListAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreAdd.resx">
+      <DependentUpon>StoreAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreUpdate.resx">
+      <DependentUpon>StoreUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="СontractorAdd.resx">
+      <DependentUpon>СontractorAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="director.resx">
+      <DependentUpon>director.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entrance.resx">
+      <DependentUpon>entrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Handbook_eden_izmeren.resx">
+      <DependentUpon>Handbook_eden_izmeren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="handbook_kategoriy.resx">
+      <DependentUpon>handbook_kategoriy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kassir.resx">
+      <DependentUpon>Kassir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kladovhik.resx">
+      <DependentUpon>Kladovhik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordUpdate.resx">
+      <DependentUpon>PasswordUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalAdd.resx">
+      <DependentUpon>PersonalAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalUpdate.resx">
+      <DependentUpon>PersonalUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

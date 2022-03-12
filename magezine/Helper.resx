@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Работа с данным программным продуктом начинается с появления логотипа формы. После пользователь попадает  на форму «Авторизация». На ней необходимо ввести данные своей учетной записи, а именно логин и пароль. В случае ввода неверного логина или пароля программа сообщит о том, что данные не верны. После успешной авторизации открывается главная форма. В зависимости от вашей должности (директор, кассир или кладовщик), вам предоставляются разные функции программы, например, кассир не может устанавливать цены, принимать товар или редактировать справочники.
+Директор. После авторизации по роли директор, открывается главная форма. В левом боковом меню расположены ссылки, которые используются для перехода между интерфейсами, который состоит из таблицы и меню редактирования данной таблицы. По умолчанию открыт интерфейс редактирования прайс-листа, в котором доступно добавление и удаление новых цен. Для  обновления цен требуется кликнуть на кнопку «Новая цена», после чего откроется форма для заполнения данных. Важное примечание, при обновлении прайс-листа, цены должны быть обновлены на все товары, иначе кассир не будет видеть товар по старой цене. При удалении следует выбрать запись которую вы хотите удалить и кликнуть по кнопке «Удалить».
+По нажатию на «Персонал» откроется интерфейс для работы с персоналом, в котором пользователь сможет добавлять, редактировать и увольнять персонал. Для добавление или редактирование персонала требуется кликнуть на кнопки Добавить» или редактировать, в зависимости от того, что требуется выполнить, после чего откроется форма в которую нужно занести информацию о персонале. Для того, что бы уволить пользователя нужно выбрать его в таблице, кликнуть на конку «Уволить» и подтвердить действия.
+Интерфейс для работы с поставщиками, работает аналогично персоналу. 
+В верхнем меню в вкладке «файл» расположена кнопка «выход», по нажатию на нее пользователь выходит из учетной записи. Рядом с вкладкой «Файл», расположена вкладка «Справочники», в которой расположены ссылки на справочник «Единица измерения» и «Категории товаров». По нажатию на них, откроется форма редактирования справочника. Для добавления данных в справочники, нужно ввести необходимые значения в поле, расположенное над кнопкой «Добавить», после чего кликнуть на кнопку «Добавить». При редактировании справочника двойным кликом нажать на нужную запись и в поле ввода изменить запись на необходимую, после кликнуть на «изменить». Во время удаления, следует выбрать нужную запись и нажать на «Удалить», подтверждая свое действие.
+Кладовщик. Пользователя с доступом «Кладовщик» доступно редактирование справочников, склада, поставок, а так же вывод отчета «отчет о остатках товара на складе». Главная форма оформлена аналогично форме директора.
+Редактирование склада осуществляется правым меню, при добавлении кликаем на «Добавить» и заносим все данные в о товаре. Во время изменения данных на складе следует выбрать запись и кликнуть на кнопку «Изменить».  
+Кассир, после авторизации попадает на окно с таблицей товара, на которые установлены цены. Для того что бы продать товар, следует перейти на форму «Новый чек», это можно сделать нажав на кнопку «Новый чек», после чего формируется новый чек, в котором кассир добавляет товар, после чего, при необходимости, выводиться документ «товарный чек».
+
+</value>
+  </data>
+</root>
